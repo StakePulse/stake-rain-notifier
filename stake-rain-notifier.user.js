@@ -4228,7 +4228,7 @@
                 if (!STAKE_EMOJIS.includes(name)) return;
                 if (!emojiLog[name]) emojiLog[name] = [];
                 emojiLog[name].push({ ts: msgTs, chatId: msgChatId });
-                if (emojiLog[name].length > 2000) emojiLog[name] = emojiLog[name].slice(-2000);
+                if (emojiLog[name].length > 50000) emojiLog[name] = emojiLog[name].slice(-50000);
                 changed = true;
               });
               if (changed) save(SK_EMOJI_COUNT, emojiLog);
