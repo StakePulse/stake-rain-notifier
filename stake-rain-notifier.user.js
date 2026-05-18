@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         StakePulse
 // @namespace    https://stake.bet/stakepulse
-// @version      1.5.86
+// @version      1.5.87
 // @description  StakePulse - Rain & Stats tracker pour Stake.bet - by alleluiateam | v1.5.0 - Fix doublons RAIN_LOG
 // @author       alleluiateam
 // @match        https://stake.com/*
@@ -3319,7 +3319,7 @@
     if (curTab === 'crypto' && document.getElementById('tab-crypto') && document.getElementById('tab-crypto').classList.contains('active')) renderCrypto();
   }, 60000);
   // Verification des mises a jour
-  var CURRENT_VERSION = '1.5.86'; // Doit correspondre a @version
+  var CURRENT_VERSION = '1.5.87'; // Doit correspondre a @version
   var RAW_URL = 'https://raw.githubusercontent.com/tarteteambrumaire-debug/stake-rain-notifier/main/stake-rain-notifier.user.js';
   function compareVersions(a, b) {
     var pa = a.split('.').map(Number), pb = b.split('.').map(Number);
