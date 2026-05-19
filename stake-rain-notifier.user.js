@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         StakePulse
 // @namespace    https://stake.bet/stakepulse
-// @version      1.5.132
-// @description  StakePulse - Rain & Stats tracker pour Stake.bet - by alleluiateam | v1.5.132 - Ajout menu Wager Goals + Detecteur High Roller + Fix reset wager + Reset par periode + Session tracker + Migration wager goals + Fix Hot Words jour + Fix Emoji Stats jour + Filtre chats Hot Words + Fix Top Rainer jour + Fix Multi Tracker betId + notifs + Fix toggle + Fix seuil min 1.01
+// @version      1.5.133
+// @description  StakePulse - Rain & Stats tracker pour Stake.bet - by alleluiateam | v1.5.133 - Ajout menu Wager Goals + Detecteur High Roller + Fix reset wager + Reset par periode + Session tracker + Migration wager goals + Fix Hot Words jour + Fix Emoji Stats jour + Filtre chats Hot Words + Fix Top Rainer jour + Fix Multi Tracker betId + notifs + Fix toggle + Fix seuil min 1.01
 // @author       alleluiateam
 // @match        https://stake.com/*
 // @match        https://stake.bet/*
@@ -1664,9 +1664,9 @@
             '<span style="font-size:11px;color:#8899aa">🕐 Dernière rain</span>',
             '<span id="srn-lr" style="font-size:12px;font-weight:600;color:#fff">-</span>',
           '</div>',
-          // Meilleure rain 24h
+          // Meilleure rain du jour
           '<div id="srn-best-rain-card" style="display:none;background:#ffd70010;border:1px solid #ffd70033;border-radius:8px;padding:8px 12px;margin-top:6px;display:flex;justify-content:space-between;align-items:center">',
-            '<span style="font-size:11px;color:#8899aa">\uD83C\uDFC6 Meilleure rain 24h</span>',
+            '<span style="font-size:11px;color:#8899aa">\uD83C\uDFC6 Meilleure rain du jour</span>',
             '<span id="srn-best-rain" style="font-size:13px;font-weight:800;color:#ffd700">-</span>',
           '</div>',
           // Disette
@@ -3589,7 +3589,7 @@
     if (curTab === 'crypto' && document.getElementById('tab-crypto') && document.getElementById('tab-crypto').classList.contains('active')) renderCrypto();
   }, 60000);
   // Verification des mises a jour
-  var CURRENT_VERSION = '1.5.132'; // Doit correspondre a @version
+  var CURRENT_VERSION = '1.5.133'; // Doit correspondre a @version
   var RAW_URL = 'https://raw.githubusercontent.com/tarteteambrumaire-debug/stake-rain-notifier/main/stake-rain-notifier.user.js';
   function compareVersions(a, b) {
     var pa = a.split('.').map(Number), pb = b.split('.').map(Number);
