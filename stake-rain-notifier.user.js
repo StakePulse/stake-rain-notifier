@@ -1664,9 +1664,9 @@
             '<span style="font-size:11px;color:#8899aa">🕐 Dernière rain</span>',
             '<span id="srn-lr" style="font-size:12px;font-weight:600;color:#fff">-</span>',
           '</div>',
-          // Meilleure rain 24h
+          // Meilleure rain du jour
           '<div id="srn-best-rain-card" style="display:none;background:#ffd70010;border:1px solid #ffd70033;border-radius:8px;padding:8px 12px;margin-top:6px;display:flex;justify-content:space-between;align-items:center">',
-            '<span style="font-size:11px;color:#8899aa">\uD83C\uDFC6 Meilleure rain 24h</span>',
+            '<span style="font-size:11px;color:#8899aa">\uD83C\uDFC6 Meilleure rain du jour</span>',
             '<span id="srn-best-rain" style="font-size:13px;font-weight:800;color:#ffd700">-</span>',
           '</div>',
           // Disette
